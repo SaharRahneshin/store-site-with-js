@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+header h3 {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    text-shadow: 0 0 3px #ff8640;
+}
+.home, .logout {
+    color: var(--color-primary);
+    text-decoration: none;  
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.1s ease-in;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.logout {
+    color: var(--color-warning);
+}
+.logout:hover {
+    cursor: pointer;
+    color: var(--color-primary);
+    background-color: var(--color-warning);
+    transition: all 0.1s ease-in-out;
+}
+header i {
+    margin-left: 10px;
+}
+.home:hover{
+    color: #fff;
+    background-color: var(--color-primary);
+    transition: all 0.1s ease-in-out;
+}
+#card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+h1 {
+    margin: 50px 0 40px;
+    color: var(--color-primary);
+}
+#card h3 {
+    background-color: var(--color-warning);
+    color: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 8px;
+}
+#card div {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    padding: 15px;
+}
+#card p {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+#card i {
+    margin-right: 5px;
+}
+@media (max-width: 1215px) and (min-width: 886px){
+    header {
+        margin: auto 10px;
+    }
+    h1 {
+        margin-left: 20px;
+    }
+    #card {
+        flex-wrap: wrap;
+        margin: 20px;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 885px) {
+    header {
+        margin: auto 5px;
+    }
+    h1 {
+        margin-left: 10px;
+    }
+    #card {
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin: 20px;
+        justify-content: space-around;
+    }
+}
